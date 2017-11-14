@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Maquigru.cl</title>
+	<link rel="stylesheet" href="css/styleSheet.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/scriptPrincipal.js"></script>
+</head>
+<body>
+	<div class="slideshow">
+		<ul class="slider">
+			<li>
+				<img src="img/1.jpg" alt="">
+				<section class="caption">
+					<h1>Maquigru.cl</h1>
+					<p>Descripcion 1 </p>
+				</section>
+			</li>
+			<li>
+				<img src="img/2.jpg" alt="">
+				<section class="caption">
+					<h1>Maquigru.cl</h1>
+					<p>Confianza y Resultados</p>
+				</section>
+			</li>
+			<li>
+				<img src="img/3.jpg" alt="">
+				<section class="caption">
+					<h1>Maquigru.cl</h1>
+					<p>Descripcion 3</p>
+				</section>
+			</li>
+			<li>
+				<img src="img/4.jpg" alt="">
+				<section class="caption">
+					<h1>Maquigru.cl</h1>
+					<p>Descripcion 4</p>
+				</section>
+			</li>
+		</ul>
+
+		<ol class="pagination">
+			
+		</ol>
+	
+		<div class="left">
+			<span class="fa fa-chevron-left"></span>
+		</div>
+
+		<div class="right">
+			<span class="fa fa-chevron-right"></span>
+		</div>
+
+	</div>
+	<div id='Contenido'>
+		<header>
+			<nav>
+				<!-- Menu o Navegacion --> 
+				<ul>
+					<li> <a href="index.html">Inicio</a> </li>
+					<li> <a href="QuienesSomos.html">Quienes somos</a> </li>
+					<li> <a href="Proyectos.html">Proyectos </a> </li>
+					<li><a href="Contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		</div>
+		<section>
+		<div id='Contacto'>
+			<hgroup>
+				<h1>
+					Envianos tu consulta
+				</h1>
+			</hgroup>
+			<!--Para utilizar Formularios-->
+			<form action="php/enviar.php" method="post">
+			<!--Para IngresarNatos-->
+				<label for='Nombre'>Nombre *:</label>
+				<input type="text" name="nombre" placeholder="Escribe tu Nombre"  required/>
+				<label for='Correo'>Correo *:</label>
+				<input type="email" name="correo" placeholder="Ingresa un correo"   required/>
+				<label for='Consulta'>Consulta *:</label>
+				<!--<textarea for="comentarios" rows="10" cols="40" maxlength="10" placeholder="Ingresa tus dudas"></textarea>-->
+				
+				<textarea type="text" name="consulta" placeholder="Descripcion de su consulta" required/></textarea>
+				<input type="submit" value="Enviar" id='BtnSubmit'>
+				
+			</form>
+
+				<p>Campo Obligatorio ( * )</p>
+			</div>
+		</section>
+
+	<!--Pie de Pagina-->
+		<footer>
+			<div id= 'FooterCont'>
+				<p>
+					Optimizada para Maquigru SPA.
+				</p>
+				<p> Correo Electronico: <a href="mailto:matia@hotmail.com"> Email</a></p>
+				<P> Numero Telefonico: <a href="tel:+56984437653"> Numero</a></P>
+				<div id= 'Derechos'>
+					<p>
+						Copyright © Todos los Derechos Reservados.
+					</p>
+				</div>
+			</div>
+
+		</footer>
+</body>
+</html>
